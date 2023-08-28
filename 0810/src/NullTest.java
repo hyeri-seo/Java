@@ -5,7 +5,7 @@ public class NullTest {
 		String str = "";
 		str += "A";
 		System.out.println(str);
-		String str2;
+		String str2 = null;
 		System.out.println(str2);
 	}
 

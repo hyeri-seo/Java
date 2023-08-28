@@ -14,22 +14,23 @@ public class Ex5_6 {
 		int sum = 0;
 		System.out.println("money="+money);
 		for(int i=0; i<coinUnit.length; i++) {
-		/*
-		 (1) 알맞은 코드를 넣어 완성하시오. */
-		
-//			money/500 == 5, 나머지 180
-//			money/100 == 1, 나머지 80
-//			money/50 == 1, 나머지 30
-//			money/10 == 3, 나머지 0 여기에서 멈춰야 함
-//			이때 몫을 더해야 동전의 개수임 5+1+1+3			
-		
-		int j = money/coinUnit[i];
-		money = money%coinUnit[i];
-		sum += j;
-		
-		System.out.println(coinUnit[i]+"원의 개수: "+j);
+			/*
+			 (1) 알맞은 코드를 넣어 완성하시오. */
+			
+	//			money/500 == 5, 나머지 180
+	//			money/100 == 1, 나머지 80
+	//			money/50 == 1, 나머지 30
+	//			money/10 == 3, 나머지 0 여기에서 멈춰야 함
+	//			이때 몫을 더해야 동전의 개수임 5+1+1+3			
+			
+			int j = money/coinUnit[i];
+//			money = money%coinUnit[i];
+			money = money - (coinUnit[i] * j);
+			sum += j;
+			
+			System.out.println(coinUnit[i]+"원의 개수: "+j);
 		}
-		System.out.println(sum);
+		System.out.println("동전의 총 개수: "+sum);
 
 		
 	}//main

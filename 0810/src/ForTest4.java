@@ -13,7 +13,7 @@ public class ForTest4 {
 		System.out.println("==========");
 		
 		for(int i=0; i<cnt; i++)	{
-			for(int j=0; j<i; j++)	{	//space
+			for(int j=0; j<i; j++)	{		//space
 				System.out.print(" ");
 			}
 			for(int j=0;j<cnt-i; j++)	{	//star

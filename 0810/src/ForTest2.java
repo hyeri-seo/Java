@@ -5,7 +5,8 @@ public class ForTest2 {
 		int dan, i;
 		for(i=1; i<=9; i++)	{
 			for(dan=2;dan<=9;dan++)	{
-				System.out.print(String.format("%dx%d=%2d\t", dan, i, dan*i));
+				System.out.print(String.format("%dx%d=%2d\t", dan, i, dan*i)); //%d\t로 해도 됨 %2d\s로 해도 됨
+//				System.out.print(dan + "x" + i + "=" + (dan*i) + "\t");로 해도 되긴 함. 근데 포맷 정해주면 더 가독성 좋음
 			}
 			System.out.println();
 		}
