@@ -119,21 +119,20 @@ public class Bank {
 		acc.withdraw(money);
 	}
 	
-	void accountInfo() {
+	void accountInfo() throws BankException {
 		System.out.println("[계좌조회]");
 		System.out.print("계좌번호:");
 		String id = sc.nextLine();
 		Account acc = searchAccById(id);
 		if(acc==null) {
-			System.out.println("계좌번호가 틀립니다.");
-			return;
+			throw new BankException("계좌번호가 틀립니다", BankError.NOID);
 		}
-		System.out.println(acc.info());
+		System.out.println(acc);
 	}
 	
 	void allAccountInfo() {
 		for(int i=0; i<accCnt; i++) {
-			System.out.println(accs[i].info());
+			System.out.println(accs[i]);
 		}
 	}
 	
