@@ -1,5 +1,4 @@
 
-
 import pac.Number;
 
 public class ChildNumber extends Number {
@@ -16,3 +15,4 @@ public class ChildNumber extends Number {
 		System.out.println(punum);
 	}
 }
+

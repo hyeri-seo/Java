@@ -105,3 +105,4 @@ public class InterfaceTest1 {
 		unit.move();
 	}
 }
+

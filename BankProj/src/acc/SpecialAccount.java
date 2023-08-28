@@ -2,6 +2,8 @@ package acc;
 
 import java.util.Scanner;
 
+import exc.BankException;
+
 public class SpecialAccount extends Account {
 	String grade = "Normal";
 	double interest = 0.01;
@@ -30,7 +32,7 @@ public class SpecialAccount extends Account {
 	}
 	
 	@Override
-	public void deposit(int money) {
+	public void deposit(int money) throws BankException {
 		super.deposit((int)(Math.round(money+money*interest)));
 	}
 	@Override
